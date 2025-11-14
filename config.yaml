@@ -1,0 +1,23 @@
+db_path: data/rss.sqlite3
+
+feeds:
+  - feed_url: https://hnrss.org/frontpage
+    channel_id: 1437081352930328676
+    update_interval: 30
+
+    feeds:
+  - feed_url: https://kotaku.com/rss
+    channel_id: 1437546098309992468
+    update_interval: 30
+
+    feeds:
+  - feed_url: https://timesofindia.indiatimes.com/rss.cms
+    channel_id: 1437547047652819085
+    update_interval: 30
+
+    feeds:
+  - feed_url: https://sports.ndtv.com/rss
+    channel_id: 1437547481868275862
+    update_interval: 30
+
+    
