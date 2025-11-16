@@ -1,12 +1,3 @@
-"""
-Utility functions for the bot application.
-
-This module provides:
-- Configuration loading and validation.
-- Argument parsing for command-line execution.
-- Environment variable handling for the bot token.
-"""
-
 import argparse
 import os
 import logging
