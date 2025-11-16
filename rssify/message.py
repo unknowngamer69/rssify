@@ -1,12 +1,3 @@
-"""
-Discord message formatting functions for RSS feed entries.
-
-This module provides functions to:
-- Convert HTML content to Markdown.
-- Extract and handle images in summaries.
-- Format RSS entries into `discord.Embed` messages for posting.
-"""
-
 import logging
 
 from reader.types import Entry
