@@ -1,14 +1,3 @@
-"""
-Main entry point for the bot application.
-
-This script initializes the bot by:
-- Parsing command-line arguments.
-- Configuring logging levels.
-- Loading the configuration file.
-- Setting up the RSS reader.
-- Starting the Discord bot.
-"""
-
 import logging
 import argparse
 import asyncio
