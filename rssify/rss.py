@@ -1,28 +1,3 @@
-"""
-RSSReader: An Asynchronous RSS Feed Manager for Discord Bots.
-
-This module implements an asynchronous wrapper around the `reader` library,
-designed specifically to manage RSS feeds efficiently in a non-blocking
-manner for Discord bots.
-
-Key responsibilities include:
-  - Feed Management: Adding new feeds, updating existing feeds, and
-    removing feeds that are no longer in the configuration.
-  - Entry Processing: Retrieving unread entries from feeds and marking
-    them as read after processing.
-  - Asynchronous Execution: Offloading blocking operations to a separate
-    thread using `asyncio.to_thread()`, ensuring that feed operations do not
-    block the main event loop.
-  - Separation of Concerns: Delegating asynchronous task execution and
-    feed-specific helper functions to dedicated classes for improved
-    maintainability and testability.
-
-This design enables efficient and scalable integration of RSS feed updates
-into Discord bots, providing a robust data layer that can handle frequent
-feed updates and entry processing without impacting the responsiveness of
-the application.
-"""
-
 import asyncio
 import logging
 from typing import Any, Callable, List, Optional, Set, TypeVar
