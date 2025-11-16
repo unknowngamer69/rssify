@@ -1,14 +1,3 @@
-"""
-DiscordBot: An Asynchronous Discord Bot for Posting RSS Feed Updates
-
-This bot periodically checks configured RSS feeds and posts new entries
-to designated Discord channels. Key features include:
-  - Asynchronous RSS feed updates via an RSSReader instance.
-  - Concurrent processing of multiple feeds and their entries.
-  - Graceful error handling to avoid disruptions in execution.
-  - Built-in healthcheck endpoints for liveness and readiness monitoring.
-"""
-
 import logging
 import asyncio
 from typing import List, Optional
