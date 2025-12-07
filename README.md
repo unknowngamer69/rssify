@@ -10,32 +10,30 @@ Empowered by [Feed Reader](https://github.com/lemon24/reader). Inspired by [Feed
 
 ---
 
-## ✨ Features
+## Features
 
-- 🔄 **Automated RSS Feed Updates** — Feeds update automatically every hour via GitHub Actions.
-- 📜 **Enhanced Message Formatting** — HTML converted to Markdown, summaries neatly truncated.
-- 🖼️ **Image & Media Support** — Embeds use the first image from your feed.
-- ⚡ **Efficient & Scalable** — Built using async and concurrent execution.
-- 🧠 **Persistent Feed Tracking** — No duplicates; remembers what’s already sent.
-- 🐋 **Docker & GitHub Actions Ready** — Deploy anywhere or let Actions host it for free.
+- **Automatic RSS Feed Updates** — RSS feeds update automatically every hour.
+- **Cool Message Formatting** — HTML converted to Markdown, summaries neatly truncated.
+- **Supports Images and Media** — It also posts first image from your RSS Feed.
+- **Persistent Feed Tracking** — It only sends the feed which is not sent. So no duplicate messages 
 
 ---
 
-## 🚀 How to Add Your Own Channel
+## How to Add Your Own Channel
 
 You can connect your own Discord channel to receive RSS updates from this bot!  
-Just follow these steps carefully 👇
+Just follow these steps carefully :
 
 ### 🪄 Step 1: Add the Bot to Your Discord Server
-- Invite the bot to your Discord server using this link:  
-  👉 **[Invite Link- https://discord.com/oauth2/authorize?client_id=1437062662931484764&permissions=8&integration_type=0&scope=bot]**
+- Invite the bot to your Discord server:  
+  **[Invite Link- https://discord.com/oauth2/authorize?client_id=1437062662931484764&permissions=8&integration_type=0&scope=bot]**
 
 ---
 
-### 🧬 Step 2: Fork This Repository
-1. Click **“Fork”** at the top-right of this page to create your own copy.
+### Step 2: Fork This Repository
+1. Click **“Fork”** at the top-right of this repository.
 2. In your forked repo, open the file **`config.yaml`**.
-3. Scroll to the bottom and add your feed configuration like this:
+3. Then add your feed configuration like this at the end of current configuration:
 
    ```yaml
    feeds:
@@ -44,35 +42,25 @@ Just follow these steps carefully 👇
        update_interval: 30
    ```
 
-📝 **Notes:**
+ **Notes:**
 
 * Replace the RSS URL and channel ID with your own.
 * Add **only one** feed per code block.
-* Don’t delete or modify existing entries — just append yours at the end.
+* Don’t delete or modify existing entries.
 
 ---
 
-### 📬 Step 3: Submit Changes
+### Step 3: Submit Changes
 
 1. After editing `config.yaml`, **commit** your changes.
 2. Open a **pull request (PR)** to this main repository.  
-   I’ll review it and merge so your feed gets included.
+   I’ll check it and merge so your feed gets included.
 
 Once merged, the GitHub Action will automatically update your channel every hour!
 
 ---
 
-## ⚙️ GitHub Action Workflow
-
-This repository uses a scheduled GitHub Action that:
-
-* Runs the bot once every hour (`cron: "0 * * * *"`)
-* Keeps the database persistent between runs
-* Updates all configured RSS feeds in every connected channel
-
----
-
-## 💻 Running Locally (Optional)
+## Running Locally (Optional)
 
 If you’d like to run the bot locally on your machine:
 
@@ -92,11 +80,11 @@ $env:TOKEN = "Your_Discord_Bot_Token"
 python -m rssify --token $env:TOKEN --config config.yaml
 ```
 
-> 💡 Tip: Replace `"Your_Discord_Bot_Token"` with your actual bot token.
+> Note: Replace `"Your_Discord_Bot_Token"` with your actual bot token.
 
 ---
 
-## 🧾 Configuration Example
+## Configuration Example
 
 Here’s what your `config.yaml` might look like:
 
@@ -115,13 +103,13 @@ feeds:
 
 ---
 
-## 🪪 License
+## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 
-## 💬 Credits
+## Credits
 
 * Core Feed Handling: [reader](https://github.com/lemon24/reader)
 * Inspiration: [FeedCord](https://github.com/Qolors/FeedCord)
@@ -129,8 +117,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ---
 
-## ⚡ Final Note
+## Final Note
 
 * RSS posts update automatically **every hour**.
-* You don’t need to host anything — GitHub Actions does it for you.
-* Want a new feed? Just fork → edit → PR → done 🎉
+* You don’t need to host anything because this repo already uses GitHub Actions.
